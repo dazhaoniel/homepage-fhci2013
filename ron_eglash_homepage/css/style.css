@@ -533,9 +533,11 @@ label {
       height: auto;
       width: 91.5%;
       float: left;
-      margin-right: 2%;
+      margin-left: 0;
+      margin-right: 0;
+/*      margin-right: 2%;
       margin-left: 3.25%;
-      margin-right: 3.25%; } }
+      margin-right: 3.25%; */} }
 
 .slider-pagination {
   width: 100%;
