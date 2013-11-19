@@ -1,5 +1,6 @@
 /*
 Author: Daniel Zhao
+Base CSS: Blueprint CSS Framework (http://blueprintcss.org/)
 
   Table of Contents
 ==================================================
@@ -7,6 +8,7 @@ Author: Daniel Zhao
   02 - Global Styles
   03 - Navigation
   04 - Content
+  05 - Media Files
 */
 
 /* 01 - Reset & Basics */
@@ -101,8 +103,6 @@ a {
 h1 {
   width: auto;
   display: inline;
-  font-family: "bariol_regularregular";
-  border-bottom: 3px dotted white;
   font-size: 2.125em;
   line-height: 1.41176em;
   line-height: 0.75em; }
@@ -514,3 +514,109 @@ label {
 
     .btn {
       border: 0.1875em solid white; } }
+      
+.icon-menu:before {
+  content: '\e804'; }
+
+/* 05 - Media Files */
+.slider-frame {
+  position: relative;
+  height: 32.5em;
+  width: 100%; }
+  @media (min-width: 37.6em) and (max-width: 48em) {
+
+    .slider-frame {
+      height: 27.25em;
+      width: 91.5%; } }
+  @media (min-width: 0em) and (max-width: 37.5em) {
+    .slider-frame {
+      height: auto;
+      width: 91.5%;
+      float: left;
+      margin-right: 2%;
+      margin-left: 3.25%;
+      margin-right: 3.25%; } }
+
+.slider-pagination {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -2%;
+  display: inline;
+  margin-top: 0.45em; }
+  @media (min-width: 0em) and (max-width: 37.5em) {
+
+    .slider-pagination {
+      margin-top: 0.75em; } }
+
+  .slider-pagination a {
+    margin-right: 0.2em; }
+
+
+.gallery-frame {
+  position: relative; }
+
+  .gallery-frame:nth-child(2n) {
+    float: right;
+    margin-right: 0; }
+
+  .gallery-frame:first-child {
+    margin-bottom: 1.8%; }
+  @media (min-width: 0em) and (max-width: 37.5em) {
+
+    .gallery-frame:nth-child(2n) {
+      float: left;
+      margin-right: 2%; }
+
+    .gallery-frame:first-child {
+      margin-bottom: 4%; }
+
+    .gallery-frame.not-mobile {
+      display: none; } }
+
+.portrait-frame {
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  display: inline; }
+  @media (min-width: 0em) and (max-width: 37.5em) {
+
+    .portrait-frame {
+      width: 91.5%;
+      float: left;
+      margin-right: 2%;
+      margin-left: 3.25%;
+      margin-right: 3.25%; } }
+
+.landscape-frame {
+  width: 66%;
+  float: left;
+  margin-right: 2%;
+  display: inline; }
+  @media (min-width: 0em) and (max-width: 37.5em) {
+
+    .landscape-frame {
+      width: 91.5%;
+      float: left;
+      margin-right: 2%;
+      margin-left: 3.25%;
+      margin-right: 3.25%; } }
+
+.gallery {
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin-right: 2%;
+  display: inline;
+  margin-top: 3em;
+  float: right;
+  margin-right: 0;
+  *margin-left: -2%;
+  display: inline; }
+
+  .gallery a img {
+    max-width: 100%;
+    border: 0.625em solid white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
