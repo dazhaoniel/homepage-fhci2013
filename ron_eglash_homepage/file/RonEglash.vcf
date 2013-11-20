@@ -1,0 +1,14 @@
+BEGIN:VCARD
+
+VERSION:2.1
+N:Eglash;Ron;B
+FN:Ron B Eglash
+NICKNAME:Ron
+ORG:Rensselaer Polytechnic Institute;Science & Technology Studies
+TITLE:Professor
+TEL;WORK;VOICE:518 2762048
+ADR;WORK;ENCODING=QUOTED-PRINTABLE:;;Russell Sage Laboratory 5502=0D=0A110 8th Street  ;Troy;NY;12180;
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:=0D=0ASA 5th Fl=0D=0A110 8th Street  =0D=0ATroy, NY 12180=0D=0AUSA
+URL;PERSONAL:http://www.rpi.edu/~eglash/eglash.htm
+URL;WORK:
+END:VCARD

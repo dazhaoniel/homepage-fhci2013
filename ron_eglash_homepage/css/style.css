@@ -94,12 +94,15 @@ html {
   line-height: 1.5em; }
 
 a {
-  color: black;
+  color: #F6492F;
   text-decoration: none; }
   a:hover {
-    color: black; }
+  color: #E70006;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+    }
   a:visited {
-    color: black; }
+   }
 
 h1 {
   font-family: 'Gentium Book Basic', serif;
@@ -220,6 +223,9 @@ h2, h3 {
   background-color: #C9C9C9;
   color: #2B2A27;
 }
+.nav-container a:hover{
+  border: none;
+}
 .nav-container {
   -moz-box-shadow: 0 0 8px #A9A9A9;
   -webkit-box-shadow: 0 0 8px #A9A9A9;
@@ -263,7 +269,6 @@ h2, h3 {
       border-bottom: 2px solid;
       margin-bottom: -4px;
       margin-top: -2px;
-
     }
   }
       @media (min-width: 0em) and (max-width: 37.5em) {
@@ -392,18 +397,34 @@ h2, h3 {
   font-size: 52px;
 }
 .fa{
-  margin-right: 7px;
+  margin-right: 8px;
   font-size: 19px;
 }
-.contact li{
+.contact li, .address li{
   display: inline;
   padding: 0 18px;
-  font-size: 19px;
-  line-height: 38px !important;
+  font-size: 18px;
+  line-height: 39px !important;
+}
+input{
+  font-size: 18px;
+  padding: 6px 15px;
+  border: 2px solid #52514F;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius:1 0px;
+  cursor: pointer;
+  background-color: #52514F;
+  color: #F0F0F0;
+}
+input:hover{
+  background-color: #F0F0F0;
+  color: #52514F;
+  font-weight: 600;
+}
+.depart a{
 }
 .contact a{
-  color: #424242;
-  text-decoration: underline;
 }
 .contact a:hover{
   text-decoration: none;
@@ -412,7 +433,7 @@ h2, h3 {
   padding-bottom: 2px;
 }
 @media (min-width: 0em) and (max-width: 37.5em) {
-  .contact li{
+  .contact li, .address li{
     display: block;
     font-size: 15px;
   }
