@@ -1,5 +1,5 @@
 /*
-Author: Daniel Zhao
+Author: Daniel Zhao, Doris Xian
 Base CSS: Blueprint CSS Framework (http://blueprintcss.org/)
 
   Table of Contents
@@ -108,7 +108,7 @@ h1 {
   font-size: 2.555em;
   font-weight: bold;
   line-height: 1.41176em;
-  line-height: 0.75em; }
+}
 
   h1.underline-purple {
     border-bottom: 3px dotted #634877; }
@@ -209,20 +209,24 @@ h2, h3 {
       display: none; } }
 
 /* 03 - Navigation */
-.fa{
+.fa-bars{
   color: #C9C9C9;
   border: 1px solid #C9C9C9;
   padding: 4px 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-.fa:hover{
+.fa-bars:hover{
   background-color: #C9C9C9;
   color: #2B2A27;
 }
 .nav-container {
+  -moz-box-shadow: 0 0 8px #A9A9A9;
+  -webkit-box-shadow: 0 0 8px #A9A9A9;
+  box-shadow: 0 0 8px #A9A9A9;
   text-align: center;
   background: #2B2A27;
+  opacity: 0.8;
   margin-bottom: 20px;
   padding-top: 1.05em;
   padding-bottom: 1.05em; }
@@ -238,6 +242,8 @@ h2, h3 {
   text-align: center; }
 
   .page-nav a {
+    display: inline-block;
+    background: #2B2A27;
     color: #F0F0F0;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
@@ -248,17 +254,32 @@ h2, h3 {
     line-height: 2em; }
 
     .page-nav a.active{
-      color: 
-    } 
+    }
+    @media (min-width: 37.6em){
     .page-nav a:hover {
+      color: #FF5035;
+      border-top: 2px solid;
+      padding-bottom: 2px;
+      border-bottom: 2px solid;
+      margin-bottom: -4px;
+      margin-top: -2px;
 
     }
+  }
       @media (min-width: 0em) and (max-width: 37.5em) {
-
-        .page-nav a.active, .page-nav a:hover {}
+        .nav-container{
+          opacity: 0.95;
+        }
+        .page-nav a.active{}
+        .page-nav a:hover {
+          color: #2B2A27;
+          font-weight: 700;
+          background: #FB6E59;
+        }
 
           .page-nav a.active:last-child, .page-nav a:hover:last-child {
-            border-bottom: none; } }
+            border-bottom: none; } 
+      }
     @media (min-width: 48.1em) and (max-width: 64em) {
 
       .page-nav a {
@@ -283,9 +304,9 @@ h2, h3 {
         display: block;
         width: 100%;
         margin: 0;
-        border-bottom: 0.125em solid #efefef;
-        padding-top: 0.75em;
-        padding-bottom: 0.75em; }
+        border-bottom: 0.125em solid #FB6E59;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em; }
 
         .page-nav a:last-child {
           border-bottom: none; } }
@@ -318,12 +339,12 @@ h2, h3 {
     background-image: none;
     border-bottom: none;
     font-size: 1.125em;
-    line-height: 1.33333em;
+    line-height: 1.125em;
     visibility: hidden; }
   @media (min-width: 0em) and (max-width: 37.5em) {
 
     .nav-mobile .nav-container {
-      padding-top: 1.35em;
+      padding-top: 2.2em;
       padding-bottom: 0.6em; } }
 
   .nav-mobile .page-nav {
@@ -350,16 +371,8 @@ h2, h3 {
     color: #1a2b35; }
 
 /*   04 - Content */
-.name{
-  font-size: 50px;
-}
-@media (min-width: 0em) and (max-width: 37.5em) {
-  .name{
-  font-size: 40px;
-}
-}
 #home{
-  padding-top: 9em;
+  padding-top: 8em;
 }
  @media (min-width: 37.6em) and (max-width: 48em) {
   #home{
@@ -368,27 +381,79 @@ h2, h3 {
  }
  @media (min-width: 0em) and (max-width: 37.5em) {
   #home{
-    padding-top: 4em;
+    padding-top: 4.8em;
   }
  }
+#home p{
+  font-size: 19px;
+  line-height: 42px;
+}
+.name{
+  font-size: 52px;
+}
+.fa{
+  margin-right: 7px;
+  font-size: 19px;
+}
+.contact li{
+  display: inline;
+  padding: 0 18px;
+  font-size: 19px;
+  line-height: 38px !important;
+}
+.contact a{
+  color: #424242;
+  text-decoration: underline;
+}
+.contact a:hover{
+  text-decoration: none;
+  color: #E70006;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+}
+@media (min-width: 0em) and (max-width: 37.5em) {
+  .contact li{
+    display: block;
+    font-size: 15px;
+  }
+  #home p{
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .name{
+    font-size: 34px;
+  }
+  .fa{
+    margin-right: 5px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 37.6em) and (max-width: 48em) {
+  .contact li{
+    display: inline-block;
+  }
+}
+
 .strip {
   width: 100%;
   padding-top: 7em;
-  margin-bottom: -6em;
+  margin-bottom: -4em;
   padding-bottom: 2.5em; }
   @media (min-width: 37.6em) and (max-width: 48em) {
 
     .strip {
-      margin-bottom: -5em;
+      margin-bottom: -3em;
       padding-top: 4.8em;
       padding-bottom: 0; } }
   @media (min-width: 0em) and (max-width: 37.5em) {
 
     .strip {
-      margin-bottom: -3em;
+      margin-bottom: -2em;
       padding-top: 2.25em;
       padding-bottom: 2.25em; } }
-
+blockquote{
+  font-family: 'Gentium Book Basic', serif;
+}
 .content-txt {
   text-align: left;
   width: 45.75%;
