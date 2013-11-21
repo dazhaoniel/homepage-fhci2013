@@ -130,12 +130,18 @@ h1 {
 
 
 h2, h3 {
-  font-family: "open_sanssemibold";
   line-height: 1.5em; }
 
+h2{
+  font-size: 25px;
+  color: #F44429;
+  font-weight: 600;
+} 
 
 .txt-large {
+  font-weight: 600;
   width: 66%;
+  margin-bottom: 20px;
   float: left;
   margin-right: 2%;
   display: inline;
@@ -167,7 +173,7 @@ h2, h3 {
   @media (min-width: 0em) and (max-width: 37.5em) {
 
     .txt-large {
-      font-size: 1em;
+      font-size: 1.2em;
       line-height: 1.5em;
       line-height: 1.5em;
       width: 91.5%;
@@ -399,6 +405,7 @@ h2, h3 {
 .fa{
   margin-right: 8px;
   font-size: 19px;
+  margin-left: 6px;
 }
 .contact li, .address li{
   display: inline;
@@ -432,8 +439,12 @@ input:hover{
   border-bottom: 2px solid;
   padding-bottom: 2px;
 }
+.publication li{
+  line-height: 45px;
+}
+
 @media (min-width: 0em) and (max-width: 37.5em) {
-  .contact li, .address li{
+  .contact li, .address li, .publication li{
     display: block;
     font-size: 15px;
   }
@@ -772,9 +783,12 @@ label {
     border-bottom: none !important;
 }
   .gallery-frame .title-overlay {
+    color: #2B2A27;
     text-align: center;
     position: absolute;
     margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
 }
@@ -799,4 +813,21 @@ label {
 .gallery-frame a:hover > span.title-overlay {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE 8 */
+}
+.research-title{
+  display: none;
+}
+
+@media (min-width: 0em) and (max-width: 37.5em) {
+  .research-title{
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .research-title li{
+    line-height: 38px;
+  }
+  .gallery{
+    display: none;
+  }
 }
